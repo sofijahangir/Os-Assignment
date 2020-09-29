@@ -1,0 +1,14 @@
+Compilation
+
+rpcgen date.x
+
+gcc -o rdate rdate.c date_clnt.c
+
+gcc -o dateproc dateproc.c date_svc.c
+
+
+Run
+
+./dateproc&
+./rdate ccc3
+./rdate ccc3
